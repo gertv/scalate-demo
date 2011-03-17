@@ -1,4 +1,4 @@
-<%@ val order : be.anova.scalate.syntax.Order  %>
+<%@ val order : be.anova.scalate.model.Order  %>
 <div id="order">
   <ul>
     <li>Order id: ${order.id}</li>

@@ -18,6 +18,7 @@
 package be.anova.scalate.syntax
 
 import org.junit.Test
+import be.anova.scalate.model.Orders
 
 class SspDemoTest {
 
@@ -26,9 +27,9 @@ class SspDemoTest {
   @Test
   def testSspTemplate = {
     println(
-      // START SNIPPET: embedded
-      engine.layout("/ssp_demo.ssp", Map("order" -> Orders.planes))
-      // END SNIPPET: run embedded
+      // START SNIPPET: embedding
+  engine.layout("/ssp_demo.ssp", Map("order" -> Orders.planes))
+      // END SNIPPET: embedding
     )
   }
 
