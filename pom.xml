@@ -16,6 +16,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <camel.version>2.6.0</camel.version>
+
     <jetty.version>7.3.1.v20110307</jetty.version>
 
     <maven-scala-plugin.version>2.15.2</maven-scala-plugin.version>
@@ -29,6 +31,7 @@
     <module>syntax</module>
     <module>servlets</module>
     <module>jaxrs</module>
+    <module>camel</module>
     <module>slides</module>
   </modules>
 
@@ -50,6 +53,11 @@
       <dependency>
         <groupId>org.fusesource.scalate</groupId>
         <artifactId>scalate-core</artifactId>
+        <version>${scalate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.fusesource.scalate</groupId>
+        <artifactId>scalate-camel</artifactId>
         <version>${scalate.version}</version>
       </dependency>
       <dependency>
@@ -79,6 +87,24 @@
         <groupId>org.scala-lang</groupId>
         <artifactId>scala-library</artifactId>
         <version>${scala.version}</version>
+      </dependency>
+
+      <!-- Camel -->
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-mail</artifactId>
+        <version>${camel.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-scala</artifactId>
+        <version>${camel.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-test</artifactId>
+        <version>${camel.version}</version>
+        <scope>test</scope>
       </dependency>
 
       <!-- SLF4J -->

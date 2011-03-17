@@ -1,0 +1,21 @@
+<% import be.anova.scalate.model.Order %>
+<% import org.apache.camel.Message %>
+<%@ import val in : Message %>
+<%@ import val body : Order %>
+
+<%
+  in.setHeader("From", "sales@anova.be")
+  in.setHeader("To", "sales@anova.be")
+  in.setHeader("Subject", "Order confirmation")
+%>
+
+Dear ${customer.name},
+
+You just ordered:
+#for (line <- lines)
+- ${line.quantity} x ${line.article.id} [ ${line.article.description} ]
+#end
+
+Regards,
+
+The Sales Team

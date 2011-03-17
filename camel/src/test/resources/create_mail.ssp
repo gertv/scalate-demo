@@ -1,0 +1,16 @@
+<% import be.anova.scalate.model.Order %>
+<%-- START SNIPPET: template --%>
+<%@ import val body : Order %>
+
+Dear ${customer.name},
+
+You just ordered:
+#for (line <- lines)
+- ${line.quantity} x ${line.article.id}
+                     [ ${line.article.description} ]
+#end
+
+Regards,
+
+The Sales Team
+<%-- END SNIPPET: template --%>
