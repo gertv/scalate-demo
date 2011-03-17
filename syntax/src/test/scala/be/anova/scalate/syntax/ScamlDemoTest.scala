@@ -7,6 +7,7 @@
 package be.anova.scalate.syntax
 
 import org.junit.Test
+import be.anova.scalate.model.Orders
 
 class ScamlDemoTest {
 

@@ -1,4 +1,4 @@
-package be.anova.scalate.syntax;
+package be.anova.scalate.model;
 
 case class Order(val id : Int, val customer: Customer, val lines: Array[OrderLine])
 case class Customer(val id: String, val name: String)

@@ -52,14 +52,6 @@
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <configuration>
-          <systemProperties>
-            <systemProperty>
-              <name>scalate.mode</name>
-              <value>debug</value>
-            </systemProperty>
-          </systemProperties>
-        </configuration>
       </plugin>
     </plugins>
   </build>
