@@ -45,17 +45,25 @@ h1 {
     margin-bottom: 30px;
 }
 
-p {
-    margin-left: 80px;
-    margin-right: 80px;
-    font-size: 2em;
+h2 {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 32pt;
 }
+
+
 ul {
     margin-left: 80px;
     margin-right: 80px;
     padding-left: 20px;
     font-size: 29pt;
 }
+
+ul p {
+    font-size: 29pt;
+}
+
 
 li {
     padding-top: 5px;

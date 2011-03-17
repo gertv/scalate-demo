@@ -1,12 +1,15 @@
-<ul>
-  <li>Order id : {{id}}</li>
-  <li>Customer name: {{customer_name}}</li>
-</ul>
+<div id="order">
+  <ul>
+    <li>Order id : {{id}}</li>
+    <li>Customer name: {{customer_name}}</li>
+  </ul>
 
-<ul>
-{{#lines}}
-  <li>
-    {{quantity}} x {{article_id}}
-  </li>
-{{/lines}}
+  <table>
+  {{#lines}}
+    <tr>
+      <td>{{quantity}}</td>
+      <td>{{article_id}}</td>
+      <td>{{article_description}}</td>
+    </tr>
+  {{/lines}}
 </ul>

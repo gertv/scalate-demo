@@ -45,10 +45,10 @@
 
   <build>
     <plugins>
+      <!-- START SNIPPET: sitegen -->
       <plugin>
         <groupId>org.fusesource.scalate</groupId>
         <artifactId>maven-scalate-plugin</artifactId>
-        <version>${scalate.version}</version>
         <executions>
           <execution>
             <id>sitegen</id>
@@ -57,11 +57,14 @@
               <goal>sitegen-no-fork</goal>
             </goals>
             <configuration>
-              <webappDirectory>src/main/webapp</webappDirectory>
+              <webappDirectory>
+                src/main/webapp
+              </webappDirectory>
             </configuration>
           </execution>
         </executions>
       </plugin>
+      <!-- END SNIPPET: sitegen -->
       <plugin>
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
