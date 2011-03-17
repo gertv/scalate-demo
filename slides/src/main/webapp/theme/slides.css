@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@page {
+    size: A4 landscape;
+    margin: 0px;
+    background-image: url(gradient.png);
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+
+body {
+    font-family:'Lucida Grande', Geneva, Verdana, Arial, sans-serif;
+}
+
+header {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    display: block;
+    page-break-after: always;
+    background: url('images/scalate.png') left top no-repeat;
+}
+
+header div#title {
+    padding-top: 450px;
+    font-size: 2em;
+    text-align: right;
+}
+
+header div#by {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 34pt;
+    border-bottom: solid 2pt #778899;
+    page-break-before: always;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 2em;
+}
+ul {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 20px;
+    font-size: 29pt;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul ul {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    font-size: 26pt;
+}
+
+div.syntax {
+    background-color: #DEDEDE;
+    font-size: 18pt;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}

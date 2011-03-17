@@ -1,0 +1,18 @@
+<%@ var body: String %>
+<%@ var title: String = "Someone forgot to set a title ;)" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="${uri("/theme/master.css")}" rel="stylesheet" type="text/css" />
+  <title>${title}</title>
+</head>
+<body>
+  <h1>${title}</h1>
+  <div id="body">
+    ${unescape(body)}
+  </div>
+  <div id="footer">
+    Templating with Scalate rocks!
+  </div>
+</body>
+</html>

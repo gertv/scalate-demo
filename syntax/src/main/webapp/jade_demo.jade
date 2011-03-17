@@ -1,0 +1,24 @@
+- val order = be.anova.scalate.syntax.Orders.whiskies
+.order
+  dl
+    dt Order id
+    dd= order.id
+    dt Customer id
+    dd= order.customer.id
+    dt Customer name
+    dd= order.customer.name
+
+  table
+    thead
+      tr
+        th Quantity
+        th Article id
+        th Article description
+    tbody
+      - for (line <- order.lines)
+        tr
+          td= line.quantity
+          td= line.article.id
+          td= line.article.description
+
+  a(title="Home" href={ uri("/")}) Go back home

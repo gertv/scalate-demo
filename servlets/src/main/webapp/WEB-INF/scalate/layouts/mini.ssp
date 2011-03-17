@@ -1,0 +1,6 @@
+<%@ var body: String %>
+<p>--- just a mini layout ---</p>
+<div id="body">
+  ${unescape(body)}
+</div>
+<p>--------------------------</p>

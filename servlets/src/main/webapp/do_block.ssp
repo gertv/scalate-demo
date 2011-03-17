@@ -1,0 +1,9 @@
+<% attributes("title") = "Some title" %>
+<div>
+    <p>The page will be rendered by the default layout</p>
+
+    #do(layout("/WEB-INF/scalate/layouts/mini.ssp"))
+      <p>This bit will be rendered
+         by the mini.ssp layout file</p>
+    #end
+</div>

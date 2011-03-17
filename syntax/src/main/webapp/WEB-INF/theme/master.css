@@ -1,0 +1,9 @@
+body {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+}
+
+article {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}

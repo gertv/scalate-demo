@@ -1,0 +1,12 @@
+-@ val order : be.anova.scalate.syntax.Order
+.order
+  %ul
+    %li Order id: #{order.id}
+    %li Customer name: #{order.customer.name}
+
+  %table
+    - for (line <- order.lines)
+      %tr
+        %td= line.quantity
+        %td= line.article.id
+        %td= line.article.description

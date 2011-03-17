@@ -1,0 +1,16 @@
+<%@ var body: String %>
+<% escapeMarkup = false %>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="${uri("/theme/master.css")}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <article>
+    ${body}
+  </article>
+  <div id="footer">
+    Templating with Scalate rocks!
+  </div>
+</body>
+</html>

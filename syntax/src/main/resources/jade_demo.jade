@@ -1,0 +1,17 @@
+-@ val order: be.anova.scalate.syntax.Order
+
+.order
+  ul
+    li Order id: #{order.id}
+    li Customer id: #{order.customer.id}
+
+  table
+    - for (line <- order.lines)
+      tr
+        td= line.quantity
+        td= line.article.id
+        td= line.article.description
+
+p
+  | Unlike Scaml, Jade needs the | symbol
+  | before a plain text section

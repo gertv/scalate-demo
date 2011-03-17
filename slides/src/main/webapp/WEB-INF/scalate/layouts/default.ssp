@@ -1,0 +1,14 @@
+<%@ var body: String %>
+<% escapeMarkup = false %>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="${uri("/theme/slides.css")}" rel="stylesheet" type="text/css" />
+  <link href="${uri("/theme/pygmentize.css")}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <article>
+    <%= body %>
+  </article>
+</body>
+</html>

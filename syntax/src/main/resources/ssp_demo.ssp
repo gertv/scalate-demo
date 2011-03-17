@@ -1,0 +1,16 @@
+<%@ val order : be.anova.scalate.syntax.Order  %>
+<div id="order">
+  <ul>
+    <li>Order id: ${order.id}</li>
+    <li>Customer id: ${order.customer.id}</li>
+  </ul>
+  <table>
+    <% for (line <- order.lines) { %>
+    <tr>
+      <td>${line.quantity}</td>
+      <td>${line.article.id}</td>
+      <td>${line.article.description}</td>
+    </tr>
+    <% } %>
+  </table>
+</div>
